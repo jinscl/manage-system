@@ -41,6 +41,10 @@ class MUtil{
 		    //["param=123&", "", "123", "&", index: 0, input: "param=123&param1=456", groups: undefined]			
 			return result ? decodeURIComponent(result[2]) : null;
 	}
+	//成功提示
+	successTips(successTips){
+		alert(successTips || '操作成功~');
+	}
 	//错误提示
 	errorTips(errMsg){
 		alert(errMsg || '好像哪里不对了~');
