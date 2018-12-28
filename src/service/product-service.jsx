@@ -97,5 +97,21 @@ class Product{
             }
 		})
 	}
+	//新增品类
+	saveCategory(category){
+		return _ms.request({
+            type    : 'post',
+            url     : '/manage/category/add_category.do',
+            data    : category
+		})
+	}
+	updateCategoryName(category){
+		return _ms.request({
+            type    : 'post',
+            url     : '/manage/category/set_category_name.do',
+            data    : category
+		})
+	}
+
 }
 export default Product;
